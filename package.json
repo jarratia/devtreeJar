@@ -4,19 +4,27 @@
   "description": "Primer proyecto con express y typescript",
   "main": "index.js",
   "scripts": {
-    "dev": "node index.js"
+    "dev": "nodemon src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jarratia/devtree.git"
+    "url": "git+https://github.com/jarratia/devtreeJar.git"
   },
   "author": "Javier Arratia",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jarratia/devtree/issues"
+    "url": "https://github.com/jarratia/devtreeJar.git/issues"
   },
-  "homepage": "https://github.com/jarratia/devtree#readme",
+  "homepage": "https://github.com/jarratia/devtreeJar.git#readme",
   "dependencies": {
     "express": "^4.21.1"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "nodemon": "^3.1.7",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
   }
 }
